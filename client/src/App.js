@@ -9,7 +9,8 @@ import RecordList from "./components/recordList";
 import Edit from "./components/edit";
 import Create from "./components/create";
 import Extractor from "./components/extract";
- 
+import Retriever from "./components.retrieve";
+
 const App = () => {
  return (
    <div>
@@ -19,6 +20,7 @@ const App = () => {
        <Route path="/edit/:id" element={<Edit />} />
        <Route path="/create" element={<Create />} />
        <Route path="/extract" element={<Extractor />} />
+       <Route path="/retrieve" element={<Retriever />} />
      </Routes>
    </div>
  );
