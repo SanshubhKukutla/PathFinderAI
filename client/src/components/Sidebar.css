@@ -1,0 +1,96 @@
+/* Sidebar base styles */
+.sidebar {
+    background: #4e73df; /* Primary color */
+    color: white;
+    min-height: 100vh;
+    padding-top: 20px;
+  }
+  
+  /* Brand styles */
+  .sidebar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    text-decoration: none;
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar-brand-icon {
+    margin-right: 0.5rem;
+    font-size: 2rem; /* Adjust icon size as needed */
+  }
+  
+  .sidebar-brand-text {
+    display: block;
+    font-weight: bold;
+  }
+  
+  /* Sidebar Divider */
+  .sidebar-divider {
+    border-bottom: 1px solid #2e59d9; /* A lighter divider color */
+    margin-bottom: 1rem;
+  }
+  
+  /* Sidebar Links */
+  .navbar-nav .nav-link {
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: left;
+  }
+  
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link:focus {
+    color: white;
+    background: #2e59d9; /* A slightly darker shade for hover state */
+  }
+  
+  .navbar-nav .nav-link.active {
+    background: #224abe; /* An even darker shade for active state */
+    color: white;
+  }
+  
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+  
+  /* Sidebar Toggler */
+  #sidebarToggle {
+    color: white;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: left;
+  }
+  
+  #sidebarToggle:hover {
+    background-color: #2e59d9;
+  }
+  
+  /* Collapsible Items */
+  .collapse-item {
+    color: white;
+    padding: 0.5rem 1.5rem;
+    text-align: left;
+    display: block;
+    width: 100%;
+  }
+  
+  .collapse-item:hover {
+    background-color: #2e59d9;
+  }
+  
+  /* Responsive Adjustments */
+  @media (min-width: 768px) {
+    .sidebar {
+      width: 200px; /* Adjust the width as necessary */
+    }
+  }
+  
+  /* Optional: Animation for collapsible items */
+  .collapse-entering,
+  .collapse-exiting,
+  .collapse-entered {
+    transition: height 0.3s ease;
+  }
+  
