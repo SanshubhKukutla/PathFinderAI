@@ -14,7 +14,8 @@ const Record = (props) => (
        }}
      >
        Delete
-     </button>
+     </button> | 
+      <Link className="btn btn-link" to={`/extract`}>Extract</Link>
    </td>
  </tr>
 );
