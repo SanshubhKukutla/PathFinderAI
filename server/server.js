@@ -26,7 +26,6 @@ app.post('/api/extract-text', upload.single('pdf'), async (req, res) => {
   if (!req.file) {
     return res.status(400).send('No PDF file uploaded.');
   }
-
   try {
     const pdfData = await pdfParse(req.file.buffer);
     const pdfText = pdfData.text;
