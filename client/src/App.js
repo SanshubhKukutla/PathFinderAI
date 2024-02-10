@@ -1,13 +1,15 @@
-import React from "react";
+const React = require('react');
  
 // We use Route in order to define the different routes of our application
-import { Route, Routes } from "react-router-dom";
+const Route = require('react-router-dom');
+const Routes = require('react-router-dom');
  
 // We import all the components we need in our app
-import Navbar from "./components/navbar";
-import RecordList from "./components/recordList";
-import Edit from "./components/edit";
-import Create from "./components/create";
+const NavBar = require('./components/navbar');
+const RecordList = require('./components/recordList');
+const Edit = require('./components/edit');
+const Create = require('./components/create');
+const Extraction = require('./components/extraction');
  
 const App = () => {
  return (
@@ -17,6 +19,7 @@ const App = () => {
        <Route exact path="/" element={<RecordList />} />
        <Route path="/edit/:id" element={<Edit />} />
        <Route path="/create" element={<Create />} />
+       <Route path="/extraction" element={<Extraction />} />
      </Routes>
    </div>
  );
