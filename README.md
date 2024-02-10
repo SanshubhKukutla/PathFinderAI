@@ -1,2 +1,2 @@
-# Hackalytics-
+# PathFinderAI
 Sanshubh, Ananya, Jason, Keane
