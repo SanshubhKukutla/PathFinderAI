@@ -10,7 +10,6 @@ import Edit from "./components/edit";
 import Create from "./components/create";
 import Extractor from "./components/extract";
 
-
 const App = () => {
  return (
    <div>
