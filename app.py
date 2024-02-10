@@ -1,29 +1,20 @@
-from flask import Flask, render_template, request
-import openai
+import PyPDF2
 
-app = Flask(__name__)
+def pdf_to_text(pdf_path, text_path):
+    try:
+        with open(pdf_path, 'rb') as pdf_file:
+            pdf_reader = PyPDF2.PdfReader(pdf_file)
+            text_content = ''
+            for page_num in range(len(pdf_reader.pages)):
+                page = pdf_reader.pages[page_num]
+                text_content += page.extract_text()
 
-# Set your OpenAI API key
-openai.api_key = 'YOUR_OPENAI_API_KEY'
-@app.route('/')
-def index():
-    return render_template('index.html')
+            with open(text_path, 'w', encoding='utf-8') as text_file:
+                text_file.write(text_content)
 
-@app.route('/generate_resume', methods=['POST'])
-def generate_resume():
-    user_input = request.form['user_input']
+            print("Conversion successful. Text saved to", text_path)
 
-    # Use OpenAI to generate AI-based resume content
-    # Modify the prompt and parameters based on your needs
-    response = openai.Completion.create(
-        engine="text-davinci-002",
-        prompt=f"Generate a resume for a candidate with the following skills: {user_input}",
-        max_tokens=200
-    )
+    except Exception as e:
+        print("Error:", str(e))
 
-    resume_content = response['choices'][0]['text']
-
-    return render_template('resume.html', resume_content=resume_content)
-
-if __name__ == '__main__':
-    app.run(debug=True)
+pdf_to_text('JasonRandolphResume.pdf', 'output.txt')
