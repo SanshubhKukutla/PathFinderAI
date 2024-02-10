@@ -55,7 +55,8 @@ async function processPdfAndGenerateContent(pdfBuffer) {
   console.log(text);
 
   // strip text of backticks, "json", backslashes, and \n, and non-breaking spaces
-  const strippedText = text.replace(/`/g, '').replace(/json/g, '').replace(/\u00a0/g, ' ').replace(/u2019/g, ' ').replace(/u2022/g, ' ').replace(/u2013/g, ' ').replace(/\n/g, '').replace(/\\/g, '');
+
+  const strippedText = text.replace(/`/g, '').replace(/json/g, '').replace(/\u00a0/g, ' ').replace(/u2022/g, '').replace(/u2019/g, '').replace(/u2013/g, '').replace(/\n/g, '').replace(/\\/g, '');
 
   // parse the string into a JSON object, if there is an error, return the string
   const parsedText = JSON.parse(strippedText);
