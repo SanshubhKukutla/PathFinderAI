@@ -5,11 +5,12 @@ const Route = require('react-router-dom');
 const Routes = require('react-router-dom');
  
 // We import all the components we need in our app
-const NavBar = require('./components/navbar');
-const RecordList = require('./components/recordList');
-const Edit = require('./components/edit');
-const Create = require('./components/create');
-const Extraction = require('./components/extraction');
+import Navbar from "./components/navbar";
+import RecordList from "./components/recordList";
+import Edit from "./components/edit";
+import Create from "./components/create";
+import Extractor from "./components/extract";
+
  
 const App = () => {
  return (
@@ -19,7 +20,7 @@ const App = () => {
        <Route exact path="/" element={<RecordList />} />
        <Route path="/edit/:id" element={<Edit />} />
        <Route path="/create" element={<Create />} />
-       <Route path="/extraction" element={<Extraction />} />
+       <Route path="/extract" element={<Extractor />} />
      </Routes>
    </div>
  );
