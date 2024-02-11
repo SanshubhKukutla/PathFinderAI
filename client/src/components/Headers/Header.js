@@ -39,7 +39,7 @@ const Header = () => {
                           Name
                         </CardTitle>
                         <span className="h2 font-weight-bold mb-0">
-                          Luke Larson
+                          Jason Randolph
                         </span>
                       </div>
                       <Col className="col-auto">
@@ -68,7 +68,7 @@ const Header = () => {
                         >
                           Role Recommended
                         </CardTitle>
-                        <span className="h2 font-weight-bold mb-0">Software Developer</span>
+                        <span className="h2 font-weight-bold mb-0">Software Engineering Intern</span>
                       </div>
                       <Col className="col-auto">
                         <div className="icon icon-shape bg-warning text-white rounded-circle shadow">
@@ -96,7 +96,7 @@ const Header = () => {
                         >
                           Education
                         </CardTitle>
-                        <span className="h2 font-weight-bold mb-0">University of Washington</span>
+                        <span className="h2 font-weight-bold mb-0">Georgia Institute of Technology</span>
                       </div>
                       <Col className="col-auto">
                         <div className="icon icon-shape bg-yellow text-white rounded-circle shadow">
@@ -124,7 +124,7 @@ const Header = () => {
                         >
                           Last Position
                         </CardTitle>
-                        <span className="h2 font-weight-bold mb-0">Co-Founder, PiRhoSoft</span>
+                        <span className="h2 font-weight-bold mb-0">Officer, GITMAD</span>
                       </div>
                       <Col className="col-auto">
                         <div className="icon icon-shape bg-info text-white rounded-circle shadow">
