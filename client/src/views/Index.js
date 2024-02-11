@@ -75,7 +75,7 @@ const Index = (props) => {
                     <h6 className="text-uppercase text-light ls-1 mb-1">
                       Overview
                     </h6>
-                    <h2 className="text-white mb-0">Sales value</h2>
+                    <h2 className="text-white mb-0">Hiring Rate and Trends</h2>
                   </div>
                   <div className="col">
                     <Nav className="justify-content-end" pills>
@@ -150,7 +150,7 @@ const Index = (props) => {
               <CardHeader className="border-0">
                 <Row className="align-items-center">
                   <div className="col">
-                    <h3 className="mb-0">Page visits</h3>
+                    <h3 className="mb-0">Position visits</h3>
                   </div>
                   <div className="col text-right">
                     <Button
@@ -167,7 +167,7 @@ const Index = (props) => {
               <Table className="align-items-center table-flush" responsive>
                 <thead className="thead-light">
                   <tr>
-                    <th scope="col">Page name</th>
+                    <th scope="col">Position name</th>
                     <th scope="col">Visitors</th>
                     <th scope="col">Unique users</th>
                     <th scope="col">Bounce rate</th>
@@ -175,7 +175,7 @@ const Index = (props) => {
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">/PathFinderAI/</th>
+                    <th scope="row">Data Scientist</th>
                     <td>4,569</td>
                     <td>340</td>
                     <td>
@@ -183,7 +183,7 @@ const Index = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">/PathFinderAI/index.html</th>
+                    <th scope="row">Machine Learning Engineer</th>
                     <td>3,985</td>
                     <td>319</td>
                     <td>
@@ -192,7 +192,7 @@ const Index = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">/PathFinderAI/charts.html</th>
+                    <th scope="row">Software Development Engineer (SDE)</th>
                     <td>3,513</td>
                     <td>294</td>
                     <td>
@@ -201,7 +201,7 @@ const Index = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">/PathFinderAI/tables.html</th>
+                    <th scope="row">Cybersecurity Specialist</th>
                     <td>2,050</td>
                     <td>147</td>
                     <td>
@@ -209,7 +209,7 @@ const Index = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">/PathFinderAI/profile.html</th>
+                    <th scope="row">Cloud Solutions Architect</th>
                     <td>1,795</td>
                     <td>190</td>
                     <td>
@@ -226,7 +226,7 @@ const Index = (props) => {
               <CardHeader className="border-0">
                 <Row className="align-items-center">
                   <div className="col">
-                    <h3 className="mb-0">Social traffic</h3>
+                    <h3 className="mb-0">Similar Companies</h3>
                   </div>
                   <div className="col text-right">
                     <Button
