@@ -22,6 +22,7 @@ import Register from "./views/examples/Register.js";
 import Login from "./views/examples/Login.js";
 import Tables from "./views/examples/Tables.js";
 import Icons from "./views/examples/Icons.js";
+import Upload from "./views/examples/Upload.js";
 
 var routes = [
   {
@@ -58,6 +59,20 @@ var routes = [
     icon: "ni ni-circle-08 text-pink",
     component: <Register />,
     layout: "/auth",
+  },
+  {
+    path: "/login",
+    name: "Login",
+    icon: "ni ni-circle-08 text-purple",
+    component: <Login />,
+    layout: "/auth",
+  },
+  {
+    path: "/upload",
+    name: "Upload",
+    icon: "ni ni-cloud-download-95 text-blue",
+    component: <Upload/>,
+    layout: "/up",
   },
 ];
 export default routes;

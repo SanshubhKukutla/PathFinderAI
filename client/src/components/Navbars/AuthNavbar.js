@@ -86,6 +86,12 @@ const AdminNavbar = () => {
                 </NavLink>
               </NavItem>
               <NavItem>
+                <NavLink className="nav-link-icon" to="/up" tag={Link}>
+                  <i className="ni ni-cloud-download-95" />
+                  <span className="nav-link-inner--text">Upload</span>
+                </NavLink>
+              </NavItem>
+              <NavItem>
                 <NavLink
                   className="nav-link-icon"
                   to="/admin/user-profile"
