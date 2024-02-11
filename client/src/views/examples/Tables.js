@@ -95,7 +95,7 @@ const Tables = () => {
                         </a>
                         <Media>
                           <span className="mb-0 text-sm">
-                          Relevant machine learning experience through your internship
+                          Relevant app development experience through your GITMAD club
                           </span>
                         </Media>
                       </Media>
@@ -117,7 +117,7 @@ const Tables = () => {
                         </a>
                         <Media>
                           <span className="mb-0 text-sm">
-                          Diverse technical skillset including Python, Java, C
+                          Diverse technical skillset including Python, Java, C++
                           </span>
                         </Media>
                       </Media>
