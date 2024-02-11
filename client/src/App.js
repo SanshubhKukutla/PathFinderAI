@@ -1,29 +1,33 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
-import Navbar from "./components/navbar";
-import Sidebar from "./components/Sidebar"; // Import Sidebar component
-import RecordList from "./components/recordList";
-import Edit from "./components/edit";
-import Create from "./components/create";
-import Extractor from "./components/extract";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Sidebar from './components/Sidebar';
+import TopBar from './components/TopBar';
+import Footer from './components/Footer';
+import Dashboard from './components/Dashboard';
+import Components from './components/Components';
+import Utilities from './components/Utilities';
+import './components/App.css';
 
-const App = () => {
+function App() {
   return (
-    <div className="d-flex" id="wrapper">
-      <Sidebar /> {/* Add Sidebar component */}
-      <div id="page-content-wrapper">
-        <Navbar />
-        <div className="container-fluid">
-          <Routes>
-            <Route exact path="/" element={<RecordList />} />
-            <Route path="/edit/:id" element={<Edit />} />
-            <Route path="/create" element={<Create />} />
-            <Route path="/extract" element={<Extractor />} />
-          </Routes>
+    <Router>
+      <div id="wrapper">
+        <Sidebar />
+        <div id="content-wrapper" className="d-flex flex-column">
+          <TopBar />
+          <div className="container-fluid">
+            <Routes>
+              <Route path="/" exact element={<Dashboard />} />
+              <Route path="/components" element={<Components />} />
+              <Route path="/utilities" element={<Utilities />} />
+              {/* Add additional routes here */}
+            </Routes>
+          </div>
+          <Footer />
         </div>
       </div>
-    </div>
+    </Router>
   );
-};
+}
 
 export default App;
