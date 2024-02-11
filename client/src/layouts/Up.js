@@ -15,7 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React, { useState } from "react";
 import { useLocation, Route, Routes, Navigate } from "react-router-dom";
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";
@@ -26,7 +26,7 @@ import AuthFooter from "../components/Footers/AuthFooter.js";
 
 import routes from "../routes.js";
 
-const Auth = (props) => {
+const Up = (props) => {
   const mainContent = React.useRef(null);
   const location = useLocation();
 
@@ -44,7 +44,7 @@ const Auth = (props) => {
 
   const getRoutes = (routes) => {
     return routes.map((prop, key) => {
-      if (prop.layout === "/auth") {
+      if (prop.layout === "/up") {
         return (
           <Route path={prop.path} element={prop.component} key={key} exact />
         );
@@ -63,11 +63,7 @@ const Auth = (props) => {
             <div className="header-body text-center mb-7">
               <Row className="justify-content-center">
                 <Col lg="5" md="6">
-                  <h1 className="text-white">Welcome!</h1>
-                  <p className="text-lead text-light">
-                    Sign up for to see how you compare with current hires for free! 
-                    Already have an account? Log in to get further insights on your experiences.
-                  </p>
+                  <h1 className="text-white">Start by uploading your resume!</h1>
                 </Col>
               </Row>
             </div>
@@ -93,7 +89,7 @@ const Auth = (props) => {
           <Row className="justify-content-center">
             <Routes>
               {getRoutes(routes)}
-              <Route path="*" element={<Navigate to="/auth/login" replace />} />
+              <Route path="*" element={<Navigate to="/up" replace />} />
             </Routes>
           </Row>
         </Container>
@@ -103,4 +99,4 @@ const Auth = (props) => {
   );
 };
 
-export default Auth;
+export default Up;
