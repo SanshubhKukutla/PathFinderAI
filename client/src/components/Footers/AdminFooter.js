@@ -33,7 +33,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              Creative Tim
+              
             </a>
           </div>
         </Col>
@@ -46,7 +46,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Creative Tim
+               
               </NavLink>
             </NavItem>
 
@@ -56,7 +56,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                About Us
+              
               </NavLink>
             </NavItem>
 
@@ -66,7 +66,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Blog
+                
               </NavLink>
             </NavItem>
 
@@ -76,7 +76,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                MIT License
+              
               </NavLink>
             </NavItem>
           </Nav>
