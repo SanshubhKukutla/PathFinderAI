@@ -65,8 +65,8 @@ const Auth = (props) => {
                 <Col lg="5" md="6">
                   <h1 className="text-white">Welcome!</h1>
                   <p className="text-lead text-light">
-                    Use these awesome forms to login or create new account in
-                    your project for free.
+                    Sign up for to see how you compare with current hires for free! 
+                    Already have an account? Log in to get further insights on your experiences.
                   </p>
                 </Col>
               </Row>

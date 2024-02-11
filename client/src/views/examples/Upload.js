@@ -39,109 +39,68 @@ import {
     
     function handleFile(event) {
         setFile(event.target.files[0])
-        console.log(file)
+        //console.log(event.target.files[0])
+    }
+
+    function handleUpload(event){
+        const formData = new FormData()
+        formData.append('file',file)
+        fetch(
+            'url',
+            {
+                method: 'POST',
+                body: formData
+            }
+        ).then((response) => response.json().then(
+            (result) =>{
+                console.log('success', result)
+            }
+        )
+        .catch(error => {
+            console.error("Error:", error)
+        })
+        )
     }
     return (
       <>
         <Col lg="6" md="8">
           <Card className="bg-secondary shadow border-0">
-            <CardHeader className="bg-transparent pb-5">
-              <div>
-                <form>
-                    <input type="file" name="file" onChange={handleFile} />
-                    <button>Upload</button>
-                </form>
-              </div>
-              <div className="text-muted text-center mt-2 mb-4">
+            <CardHeader className="bg-transparent pb-5"> 
+              {/*<div className="text-muted text-center mt-2 mb-4">
                 <small>Drag and drop</small>
-              </div>
-              <div className="text-center">
-                <Button
-                  className="btn-neutral btn-icon mr-4"
-                  color="default"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <span className="btn-inner--icon">
-                    <img
-                      alt="..."
-                      src={
-                        require("../../assets/img/icons/common/github.svg")
-                          .default
-                      }
-                    />
-                  </span>
-                  <span className="btn-inner--text">Github</span>
-                </Button>
-                <Button
-                  className="btn-neutral btn-icon"
-                  color="default"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <span className="btn-inner--icon">
-                    <img
-                      alt="..."
-                      src={
-                        require("../../assets/img/icons/common/google.svg")
-                          .default
-                      }
-                    />
-                  </span>
-                  <span className="btn-inner--text">Google</span>
-                </Button>
               </div>
             </CardHeader>
             <CardBody className="px-lg-5 py-lg-5">
               <div className="text-center text-muted mb-4">
                 <small>Or browse files</small>
+              </div>*/}
+              <div className="text-center">
+                <form onSubmit={handleUpload}>
+                    {/* <input type="file" name="file" onChange={handleFile} /> */}
+                    <input   
+                    style={{
+                        backgroundColor: '#118fef',
+                        color: '#ffffff',
+                        padding: '10px 20px',
+                        border: 'none',
+                        borderRadius: '5px',
+                        cursor: 'pointer',
+                    }}
+                    name="file"  
+                    onChange={handleFile}
+                    type="file"/> 
+                    <Button variant="contained">Upload</Button>
+                </form>
               </div>
               <Form role="form">
-                <FormGroup>
-                  <InputGroup className="input-group-alternative mb-3">
-                    <InputGroupAddon addonType="prepend">
-                      <InputGroupText>
-                        <i className="ni ni-hat-3" />
-                      </InputGroupText>
-                    </InputGroupAddon>
-                    <Input placeholder="Name" type="text" />
-                  </InputGroup>
-                </FormGroup>
-                <FormGroup>
-                  <InputGroup className="input-group-alternative mb-3">
-                    <InputGroupAddon addonType="prepend">
-                      <InputGroupText>
-                        <i className="ni ni-email-83" />
-                      </InputGroupText>
-                    </InputGroupAddon>
-                    <Input
-                      placeholder="Email"
-                      type="email"
-                      autoComplete="new-email"
-                    />
-                  </InputGroup>
-                </FormGroup>
-                <FormGroup>
-                  <InputGroup className="input-group-alternative">
-                    <InputGroupAddon addonType="prepend">
-                      <InputGroupText>
-                        <i className="ni ni-lock-circle-open" />
-                      </InputGroupText>
-                    </InputGroupAddon>
-                    <Input
-                      placeholder="Password"
-                      type="password"
-                      autoComplete="new-password"
-                    />
-                  </InputGroup>
-                </FormGroup>
                 <div className="text-center">
-                  <Button className="mt-4" color="primary" type="button">
+                  <Button className="mt-4" color="default" type="button">
                     Continue
                   </Button>
                 </div>
               </Form>
-            </CardBody>
+            {/* </CardBody> */}
+            </CardHeader>
           </Card>
         </Col>
       </>
