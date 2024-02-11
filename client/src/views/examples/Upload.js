@@ -89,7 +89,6 @@ import {
                     name="file"  
                     onChange={handleFile}
                     type="file"/> 
-                    <Button variant="contained">Upload</Button>
                 </form>
               </div>
               <Form role="form">
