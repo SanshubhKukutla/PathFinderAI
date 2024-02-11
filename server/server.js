@@ -22,9 +22,6 @@ const dbo = require("./db/conn");
 
 app.use(bodyParser.json());
 
-
-// 3 functions for extracting text from PDF and converts it to PDF:
-
 // Retry utility function for error handling
 async function retryAsyncOperation(operation, maxAttempts = 3) {
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
