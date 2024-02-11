@@ -125,7 +125,8 @@ const Login = () => {
                 </label>
               </div>
               <div className="text-center">
-                <Button className="my-4" color="primary" type="button">
+                
+                <Button className="my-4" color="primary" type="button" href="/up/upload">
                   Sign in
                 </Button>
               </div>

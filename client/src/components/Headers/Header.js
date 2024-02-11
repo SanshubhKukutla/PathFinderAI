@@ -36,10 +36,10 @@ const Header = () => {
                           tag="h5"
                           className="text-uppercase text-muted mb-0"
                         >
-                          React.js
+                          Name
                         </CardTitle>
                         <span className="h2 font-weight-bold mb-0">
-                          350,897
+                          Luke Larson
                         </span>
                       </div>
                       <Col className="col-auto">
@@ -49,10 +49,10 @@ const Header = () => {
                       </Col>
                     </Row>
                     <p className="mt-3 mb-0 text-muted text-sm">
-                      <span className="text-success mr-2">
-                        <i className="fa fa-arrow-up" /> 3.48%
+                      <span className="text-warning mr-2">
+                        <i className="fas fa-arrow-down" />
                       </span>{" "}
-                      <span className="text-nowrap">Since last month</span>
+                      <span className="text-nowrap"></span>
                     </p>
                   </CardBody>
                 </Card>
@@ -66,9 +66,9 @@ const Header = () => {
                           tag="h5"
                           className="text-uppercase text-muted mb-0"
                         >
-                          Angular
+                          Role Recommended
                         </CardTitle>
-                        <span className="h2 font-weight-bold mb-0">223,56</span>
+                        <span className="h2 font-weight-bold mb-0">Software Developer</span>
                       </div>
                       <Col className="col-auto">
                         <div className="icon icon-shape bg-warning text-white rounded-circle shadow">
@@ -77,10 +77,10 @@ const Header = () => {
                       </Col>
                     </Row>
                     <p className="mt-3 mb-0 text-muted text-sm">
-                      <span className="text-danger mr-2">
-                        <i className="fas fa-arrow-down" /> 3.48%
+                      <span className="text-warning mr-2">
+                        <i className="fas fa-arrow-down" />
                       </span>{" "}
-                      <span className="text-nowrap">Since last week</span>
+                      <span className="text-nowrap"></span>
                     </p>
                   </CardBody>
                 </Card>
@@ -94,9 +94,9 @@ const Header = () => {
                           tag="h5"
                           className="text-uppercase text-muted mb-0"
                         >
-                          Python
+                          Education
                         </CardTitle>
-                        <span className="h2 font-weight-bold mb-0">991,724</span>
+                        <span className="h2 font-weight-bold mb-0">University of Washington</span>
                       </div>
                       <Col className="col-auto">
                         <div className="icon icon-shape bg-yellow text-white rounded-circle shadow">
@@ -106,9 +106,9 @@ const Header = () => {
                     </Row>
                     <p className="mt-3 mb-0 text-muted text-sm">
                       <span className="text-warning mr-2">
-                        <i className="fas fa-arrow-down" /> 1.10%
+                        <i className="fas fa-arrow-down" />
                       </span>{" "}
-                      <span className="text-nowrap">Since yesterday</span>
+                      <span className="text-nowrap"></span>
                     </p>
                   </CardBody>
                 </Card>
@@ -122,9 +122,9 @@ const Header = () => {
                           tag="h5"
                           className="text-uppercase text-muted mb-0"
                         >
-                          C++
+                          Last Position
                         </CardTitle>
-                        <span className="h2 font-weight-bold mb-0">493,654</span>
+                        <span className="h2 font-weight-bold mb-0">Co-Founder, PiRhoSoft</span>
                       </div>
                       <Col className="col-auto">
                         <div className="icon icon-shape bg-info text-white rounded-circle shadow">
@@ -132,12 +132,7 @@ const Header = () => {
                         </div>
                       </Col>
                     </Row>
-                    <p className="mt-3 mb-0 text-muted text-sm">
-                      <span className="text-success mr-2">
-                        <i className="fas fa-arrow-up" /> 12%
-                      </span>{" "}
-                      <span className="text-nowrap">Since last month</span>
-                    </p>
+                    
                   </CardBody>
                 </Card>
               </Col>
