@@ -128,7 +128,7 @@ const Index = (props) => {
                     <h6 className="text-uppercase text-muted ls-1 mb-1">
                       Performance
                     </h6>
-                    <h2 className="mb-0">Total orders</h2>
+                    <h2 className="mb-0"># Similar Resumes Hired</h2>
                   </div>
                 </Row>
               </CardHeader>
@@ -175,7 +175,7 @@ const Index = (props) => {
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">/argon/</th>
+                    <th scope="row">/PathFinderAI/</th>
                     <td>4,569</td>
                     <td>340</td>
                     <td>
@@ -183,7 +183,7 @@ const Index = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">/argon/index.html</th>
+                    <th scope="row">/PathFinderAI/index.html</th>
                     <td>3,985</td>
                     <td>319</td>
                     <td>
@@ -192,7 +192,7 @@ const Index = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">/argon/charts.html</th>
+                    <th scope="row">/PathFinderAI/charts.html</th>
                     <td>3,513</td>
                     <td>294</td>
                     <td>
@@ -201,7 +201,7 @@ const Index = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">/argon/tables.html</th>
+                    <th scope="row">/PathFinderAI/tables.html</th>
                     <td>2,050</td>
                     <td>147</td>
                     <td>
@@ -209,7 +209,7 @@ const Index = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">/argon/profile.html</th>
+                    <th scope="row">/PathFinderAI/profile.html</th>
                     <td>1,795</td>
                     <td>190</td>
                     <td>
