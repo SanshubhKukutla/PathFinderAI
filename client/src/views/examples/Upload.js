@@ -94,7 +94,7 @@ import {
               </div>
               <Form role="form">
                 <div className="text-center">
-                  <Button className="mt-4" color="default" type="button">
+                  <Button className="mt-4" color="default" type="button" href="/admin/dashboard">
                     Continue
                   </Button>
                 </div>

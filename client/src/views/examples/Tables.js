@@ -187,9 +187,9 @@ const Tables = () => {
                         </a>
                         <Media>
                           <span className="mb-0 text-sm" style={{whiteSpace: 'pre-wrap'}}>
-                            Shuyang Li's career trajectory demonstrates the impactful 
+                            Other employees' career trajectories demonstrates the impactful 
                             
-                            contributions senior software engineers can make at Google.
+                            contributions senior software engineers can make at their companies.
                           </span>
                         </Media>
                       </Media>

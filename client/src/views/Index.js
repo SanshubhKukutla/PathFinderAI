@@ -250,7 +250,7 @@ const Index = (props) => {
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">Facebook</th>
+                    <th scope="row">Meta</th>
                     <td>1,480</td>
                     <td>
                       <div className="d-flex align-items-center">
@@ -266,7 +266,7 @@ const Index = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">Facebook</th>
+                    <th scope="row">Netflix</th>
                     <td>5,480</td>
                     <td>
                       <div className="d-flex align-items-center">
@@ -310,7 +310,7 @@ const Index = (props) => {
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">twitter</th>
+                    <th scope="row">X</th>
                     <td>2,645</td>
                     <td>
                       <div className="d-flex align-items-center">
